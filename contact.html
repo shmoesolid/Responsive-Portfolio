@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <!-- title and standard meta usage -->
+    <title>Shane Koehler's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="portfolio" />
+    <meta name="keywords" content="shane koehler, portfolio, gaming" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom_bs.css">
+
+</head>
+
+<body style="background-color:silver;">
+
+    <!-- HEADER/NAV -->
+    <ul class="nav nav-pills flex-column flex-sm-row text-center shadow bg-light">
+        <li class="nav-item flex-sm-fill text-light bg-dark navbar-text">
+            Shane Koehler
+        </li>
+        <li class="nav-item flex-sm-fill">
+            <a class="nav-link rounded-0" href="index.html">About</a>
+        </li>
+        <li class="nav-item flex-sm-fill">
+            <a class="nav-link rounded-0" href="portfolio.html">Protfolio</a>
+        </li>
+        <li class="nav-item flex-sm-fill">
+            <a class="nav-link rounded-0 active" href="contact.html">Contact</a>
+        </li>
+    </ul>
+
+    <!-- MAIN -->
+    <main class="container"><div class="row"><div class="col-md-12">
+        <div class="card" style="background-color: #eeeeee;">
+            <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <hr />
+                <div class="card-text">
+                    <form action="#do_server_stuff">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter no one's name" name="name" />
+                            <br />
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter no one's email" name="email" />
+                            <br />
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" placeholder="Enter no one's message" rows="5"></textarea>
+                            <br />
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div></div></main>
+
+    <!-- FOOTER -->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            &copy; Shane Koehler (week2_homework)
+        </div>
+    </footer>
+
+</body>
+</html>
