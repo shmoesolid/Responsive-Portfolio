@@ -38,6 +38,6 @@ function toggleDisplay(pageToShow)
         }
 
         else
-        console.log("not doing anything on: " + cur.id);
+            console.log("not doing anything on: " + cur.id);
     }
 }
