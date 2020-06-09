@@ -4,14 +4,14 @@ var pages =
 [
     {
         id: "p_about",
-        element: $("#"+this.id)
+        element: $("#p_about")
     }, 
     {
         id: "p_portfolio", 
-        element: $("#"+this.id)
+        element: $("#p_portfolio")
     },
     {
         id: "p_contact",
-        element: $("#"+this.id)
+        element: $("#p_contact")
     }
 ];

@@ -3,8 +3,9 @@
  * 
  * @param {string} pageToShow 
  */
-function toggleDisplay(pageToShow)
+function loadPage(pageToShow)
 {
+    
     // load from the page but only from main tag within
     ELM_LOADER.load(pageToShow +".html main", function( response, status, xhr )
     {
@@ -12,7 +13,7 @@ function toggleDisplay(pageToShow)
         if ( status == "error" ) 
             ELM_LOADER.html(
                 "<h1 class='text-center'>" +
-                    "ERROR LOADING: " + xhr.status + " " + xhr.statusText + 
+                    "Error loading "+ pageToShow +".html: " + xhr.status + " " + xhr.statusText + 
                 "</h1>"
             );
     });
@@ -24,20 +25,9 @@ function toggleDisplay(pageToShow)
         var cur = pages[i];
 
         // not active, remove active class
-        if ( cur.id != pageToShow) 
-        {
-            cur.element.removeClass('active');
-            console.log("removing active from: " + cur.id);
-        }
+        if ( cur.id != pageToShow) cur.element.removeClass('active');
             
-        // active, only add if doesn't have it
-        else if ( !cur.element.hasClass('active') ) 
-        {
-            cur.element.addClass('active');
-            console.log("adding active on: " + cur.id);
-        }
-
-        else
-            console.log("not doing anything on: " + cur.id);
+        // active, add active
+        else cur.element.addClass('active');
     }
 }
