@@ -4,19 +4,24 @@ main
     margin: 30px 0 110px 0;
 }
 
+a:hover
+{
+    cursor: pointer;
+}
+
 /* fixed bottom footer */
 #sticky-footer
 {
     position: fixed;
     width: 100%;
     bottom: 0;
-    border-top: #2872af solid 10px;
+    border-top: #2daf28 solid 10px;
 }
 
 /* bootstrap override */
 .active, .btn
 {
-    background-color: #2872af !important;
+    background-color: #2daf28 !important;
 }
 
 [class*="col-"]
