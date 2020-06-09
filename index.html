@@ -16,38 +16,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" type="application/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" type="application/javascript"></script>
 
+    <!-- font awesome -->
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom_bs.css">
 
 </head>
 
-<body style="background-color:silver;">
+<body>
+    <div class='body_wrapper'>
+        
+        <!-- HEADER/NAV -->
+        <ul class="nav nav-pills flex-column flex-sm-row text-center shadow bg-light">
+            <li class="nav-item flex-sm-fill text-light bg-dark navbar-text">
+                Shane Koehler
+            </li>
+            <li class="nav-item flex-sm-fill">
+                <a class="nav-link rounded-0 active" id="p_about">About</a>
+            </li>
+            <li class="nav-item flex-sm-fill">
+                <a class="nav-link rounded-0" id="p_portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item flex-sm-fill">
+                <a class="nav-link rounded-0" id="p_contact">Contact</a>
+            </li>
+        </ul>
 
-    <!-- HEADER/NAV -->
-    <ul class="nav nav-pills flex-column flex-sm-row text-center shadow bg-light">
-        <li class="nav-item flex-sm-fill text-light bg-dark navbar-text">
-            Shane Koehler
-        </li>
-        <li class="nav-item flex-sm-fill">
-            <a class="nav-link rounded-0 active" id="p_about">About</a>
-        </li>
-        <li class="nav-item flex-sm-fill">
-            <a class="nav-link rounded-0" id="p_portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item flex-sm-fill">
-            <a class="nav-link rounded-0" id="p_contact">Contact</a>
-        </li>
-    </ul>
+        <!-- PAGES DYNALOADED-->
+        <div id="loader"></div>
 
-    <!-- PAGES DYNALOADED-->
-    <div id="loader"></div>
-
-    <!-- FOOTER -->
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" >
-        <div class="container text-center">
-            &copy; Shane Koehler
-        </div>
-    </footer>
+        <!-- FOOTER -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50" >
+            <div class="container text-center">
+                &copy; Shane Koehler
+            </div>
+        </footer>
+    </div>
 
     <!-- SCRIPTS -->
     <script src="scripts/prelem.js" type="application/javascript"></script>

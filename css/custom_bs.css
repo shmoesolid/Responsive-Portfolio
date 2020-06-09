@@ -28,3 +28,13 @@ a:hover
 {
     margin-bottom: 30px;
 }
+
+.body_wrapper
+{
+    height:100vh;
+    background-color:silver;
+    background:-webkit-linear-gradient(silver, transparent, silver),
+        -webkit-repeating-linear-gradient(-45deg, silver, gray 30%, silver 40%, #dddddd 50%, gray 55%, silver 100%);
+
+}
+

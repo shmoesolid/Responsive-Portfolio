@@ -13,7 +13,10 @@ function loadPage(pageToShow)
         if ( status == "error" ) 
             ELM_LOADER.html(
                 "<h1 class='text-center'>" +
-                    "Error loading "+ pageToShow +".html: " + xhr.status + " " + xhr.statusText + 
+                    "Error loading:" +
+                    "<br />"+ pageToShow +".html" + 
+                    "<br />Status: "+ xhr.status + 
+                    "<br />Text: "+ xhr.statusText + 
                 "</h1>"
             );
     });
