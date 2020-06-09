@@ -24,9 +24,20 @@ function toggleDisplay(pageToShow)
         var cur = pages[i];
 
         // not active, remove active class
-        if ( cur.id != pageToShow) cur.element.removeClass('active');
+        if ( cur.id != pageToShow) 
+        {
+            cur.element.removeClass('active');
+            console.log("removing active from: " + cur.id);
+        }
             
         // active, only add if doesn't have it
-        else if ( !cur.element.hasClass('active') ) cur.element.addClass('active');
+        else if ( !cur.element.hasClass('active') ) 
+        {
+            cur.element.addClass('active');
+            console.log("adding active on: " + cur.id);
+        }
+
+        else
+        console.log("not doing anything on: " + cur.id);
     }
 }
