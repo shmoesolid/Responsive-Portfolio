@@ -15,3 +15,8 @@ var pages =
         element: $("#p_contact")
     }
 ];
+
+var storage =
+{
+    last: pages[0].id
+};
